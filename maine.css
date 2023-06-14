@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.total {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #294D61;
+    position: relative;
+}
+
+.one {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 150px);
+    bottom: 20px;
+}
+
+.one::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 30px;
+    background-color: red;
+    border-radius: 16px;
+    border: #294D61 5px solid;
+    top: -20px;
+    left: 45px;
+}
+
+.one::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 200px;
+    background-color: red;
+    border-radius: 16px;
+    top: 0px;
+    left: 50px;
+}
+
+.tow {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 320px;
+}
+
+.tow::before,
+.tow::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    top: 60px;
+    border-radius: 50%;
+}
+
+.tow::before {
+    left: 35px;
+}
+
+.tow::after {
+    right: 35px;
+}
+
+.thry {
+    background-color: black;
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    left: calc(50% - 60px);
+    bottom: 520px;
+}
+
+.thry::before,
+.thry::after {
+    position: absolute;
+    content: "";
+}
+
+.thry::before {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    top: 35px;
+}
+
+.thry::after {
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    bottom: -20px;
+    z-index: 1;
+    left: -40px;
+    border-radius: 15px;
+}
+
+.fore {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    border: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    top: 65%;
+    left: calc(50% - 35px);
+    z-index: 1;
+}
+
+.faif {
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    top: 100px;
+    right: 90px;
+}
+
+.six,
+.sven {
+    position: absolute;
+    background-color: orange;
+    width: 200px;
+    height: 20px;
+    transition: 2s;
+}
+
+.six {
+    transform: rotate3d(1, 1, 1, 61deg);
+    left: -146px;
+}
+
+.six::before,
+.sven::before {
+    position: absolute;
+    content: "";
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.six::before {
+    left: -47px;
+    top: -17px;
+}
+
+.sven::before {
+    left: -38px;
+    top: -11px;
+}
+
+.sven {
+    transform: rotate3d(1, 1, -3, 218deg);
+    right: -145px;
+}
+
+.plaaaa {
+    background-color: black;
+    text-align: center;
+    border-radius: 32px;
+    position: absolute;
+    top: -83%;
+}
+
+.plaaaa p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 2s;
+    padding: 5px;
+}
+
+.plaaaa p:hover {
+    animation: fadeIn 2s linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.righit {
+    transform: rotateZ(275deg);
+    left: -186px;
+}
+
+.lft {
+    transform: rotateZ(258deg);
+    left: -135px;
+}
